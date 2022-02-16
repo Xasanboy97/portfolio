@@ -1,0 +1,920 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', 'Playfair Display';
+
+}
+
+/* ==== Header Start ==== */
+header .header-menu {
+    background: url(../images/maket-sayta-dlya-bootstrap_01.jpg) no-repeat;
+    background-size: cover;
+}
+
+header .header-menu .navbar-brand {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    outline: none;
+}
+
+header .header-menu .navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 6px;
+}
+
+header .header-menu .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    padding: 5px 10px;
+    background: #00b0ff;
+}
+
+header .header-menu .header_icons .box_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header .header-menu .header_icons .box_icons .fab {
+    height: 30px;
+    width: 30px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header .header-menu .header_icons .box_icons .fa-facebook-f:hover {
+    color: deepskyblue;
+}
+
+header .header-menu .header_icons .box_icons .fa-google-play:hover {
+    color: greenyellow;
+}
+
+header .header-menu .header_icons .box_icons .fa-instagram:hover {
+    color: deeppink;
+}
+
+header .header-menu .header_title {
+    padding: 110px 0;
+}
+
+header .header-menu .header_title h2 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 48px;
+    color: black;
+}
+
+header .header-menu .header_title p {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    color: white;
+}
+
+/* ===== Header_slider ===== */
+header .center {
+    padding: 50px 0;
+}
+
+header .center .header_slider {
+    background: url(../images/Centerboard_03.jpg) no-repeat;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -60px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    padding: 40px 0;
+
+}
+
+header .header_slider .slider_img {
+    transform: translateX(15%);
+}
+
+header .header_slider .slider_img img {
+    width: 100%;
+    height: auto;
+
+}
+
+header .header_slider .slider_imges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 70px;
+
+}
+
+header .header_slider .slider_imges img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #787878;
+    margin-bottom: 8px;
+}
+
+header .header_slider .slider_title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+header .header_slider .slider_title .icons .far {
+    color: gold;
+    margin-left: 3px;
+}
+
+header .header_slider .slider_title .icons .far:nth-of-type(5) {
+    color: #787878;
+}
+
+header .header_slider .slider_title .icons p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #787878;
+    margin-left: 5px;
+}
+
+.slider_title .title_menu .nav {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-left: 2px;
+}
+
+.slider_title .title_menu ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 15px;
+
+}
+
+.slider_title .title_menu ul li a:focus {
+    border-bottom: 3px solid #00b0ff;
+    color: black;
+    padding-bottom: 2px;
+
+}
+
+.slider_title .menutitle p {
+    font-size: 16px;
+    color: #787878;
+    margin-top: 20px;
+}
+
+.header_slider .price span {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-right: 60px;
+}
+
+.header_slider .price button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    background: #00b0ff;
+    outline: none;
+    transition: 700ms;
+}
+
+.header_slider .price button:focus {
+    color: black;
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.header_slider .view a {
+    color: #00b0ff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 700ms;
+    text-decoration: none;
+}
+
+.header_slider .view a:hover {
+    color: black;
+
+
+}
+
+.instagram h1 {
+    font-size: 90px;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    transform: translateY(35px);
+}
+
+/* ===== hd-vd Start ===== */
+main .hd-vd {
+    background: url(../images/vd_bg_02.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+main .hd-vd .white_box {
+    background: white;
+    position: relative;
+    left: -25%;
+    padding: 90px;
+
+}
+
+main .hd-vd .white_box .whit_title {
+    padding: 0 30px 0 130px;
+    line-height: 30px;
+}
+
+main .hd-vd .white_box .whit_title h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .hd-vd .white_box .whit_title h3::after {
+    content: ' Х';
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main .hd-vd .white_box .whit_title p {
+    font-size: 16px;
+    color: black;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+main .hd-vd .white_box .whit_title a {
+    font-size: 16px;
+    color: #00b0ff;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+main .hd-vd .vd_box {
+    position: relative;
+    top: 80%;
+    left: -22%;
+}
+
+.team {
+    padding: 120px 0;
+}
+
+.team .title h1 {
+    font-size: 170px;
+    color: rgba(0, 0, 0, 0.041);
+    letter-spacing: 15px;
+    margin-top: 30px;
+    margin-bottom: -137px;
+}
+
+.team .box {
+    background: white;
+    padding: 25px 0 45px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    transition: 700ms;
+}
+
+.team .box .box_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team .box .box_title h3 {
+    font-size: 20px;
+    color: #00b0ff;
+    font-weight: 700;
+    margin-top: 10px;
+    transition: 700ms;
+}
+
+.team .box .box_title a {
+    font-size: 14px;
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.team .box .box_title a::after {
+    content: '****';
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: #646464;
+}
+
+.team .box .box_title p {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.team .scale {
+    transform: scale(1.1) translateY(35px);
+    z-index: 5;
+}
+
+.team .box:hover {
+    background: #00b0ff;
+}
+
+.team .box:hover .box_title h3 {
+    color: white;
+}
+
+/* === Carousel Start === */
+.carousel-inner {
+    padding: 90px 0;
+}
+
+.carousel-control-prev {
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+    top: 45%;
+    left: 4%;
+    opacity: 1;
+}
+
+.carousel-control-prev .far {
+    opacity: 1;
+    color: #00b0ff;
+}
+
+.carousel-control-next .far {
+    opacity: 1;
+    color: #00b0ff;
+}
+
+.carousel-control-next {
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+    top: 45%;
+    right: 4%;
+    opacity: 1;
+}
+
+/* ====== Serfing Start ====== */
+.Serfing .title h3 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.Serfing .title h3::after {
+    content: ' Х';
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Serfing .S_box .S_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Serfing .S_box {
+    transition: 700ms;
+}
+
+.Serfing .S_box .S_title {
+    background: white;
+    padding: 20px 77px 20px 27px;
+    text-align: left;
+}
+
+.Serfing .S_box .S_title p {
+    font-size: 16px;
+    color: #787878;
+    transition: 700ms;
+}
+
+.Serfing .S_box:hover {
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.Serfing .S_box:hover .S_title p {
+    color: #0022ff;
+}
+
+.Serfing .btn button {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background: #00b0ff;
+    text-transform: uppercase;
+    border: 0;
+    padding: 11px 25px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    transition: 700ms;
+}
+
+.Serfing .btn button:hover {
+    color: black;
+}
+
+/* ====== instagram Start ======= */
+
+.instagram .topp {
+    transform: translateY(12%);
+}
+
+.instagram .item .item_img img {
+    width: 100%;
+    height: 310px;
+}
+
+.instagram .fac_box {
+    position: relative;
+}
+
+.instagram .fac_box::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 170px;
+    background: #e5e5e5;
+}
+
+.instagram .fac_box::before {
+    display: block;
+    content: 'facebook';
+    width: 100%;
+    height: 170px;
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    background: #385490;
+    padding-top: 19px;
+}
+
+.instagram .fac_box .fac_img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: 700ms
+}
+
+.instagram .bottom {
+    width: 100%;
+    padding: 20px 20px;
+    background: white;
+}
+
+.instagram .bottom .fab {
+    font-size: 30px;
+    color: #00b0ff;
+}
+
+.instagram .bottom span:nth-of-type(1) {
+    font-size: 24px;
+    color: #00b0ff;
+    font-weight: 700;
+    margin-right: 17px;
+    margin-left: 15px;
+}
+
+.instagram .bottom span:nth-of-type(2) {
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+
+.instagram .fac_box:hover .fac_img {
+    transform: scale(1.1);
+}
+
+.instagram .social_insta .I_img img {
+    max-width: 308px;
+    height: 308px;
+}
+
+/* ==== Footer Start ==== */
+footer {
+    background: black;
+    padding: 40px 0;
+}
+
+footer .footer_title {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+footer .footer_title p {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+footer .footer_title2 ul li a {
+    font-size: 14px;
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+footer .footer_title2 ul li .fab {
+    color: #00b0ff;
+    transition: 500ms;
+}
+
+footer .footer_title2 ul li:hover .fab {
+    color: #f2d800;
+}
+
+footer .footer_title2 ul li:hover a {
+    color: #00b0ff;
+}
+
+.instagram .topp {
+    transform: translateY(12%);
+}
+
+footer .footer_form h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+footer .footer_form form input {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid #646464;
+}
+
+footer .footer_form form button {
+    color: #00b0ff;
+    background: transparent;
+    border: 0;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 3px 10px;
+    outline: none;
+    transition: 700ms;
+}
+
+footer .footer_form form button:nth-of-type(1):hover {
+    color: white;
+}
+
+footer .footer_form form button:nth-of-type(2):hover {
+    color: red;
+}
+
+/* ==== Top Scroll ==== */
+#top {
+    display: none;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    cursor: pointer;
+    z-index: 10;
+    animation: UpDown 2s linear infinite;
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+#top img {
+    padding: 15px;
+    border-radius: 45% 55% 40% 60% / 0% 100% 0% 100%;
+    width: 60px;
+    height: 60px;
+    background: #00b0ff;
+}
+
+#top img:hover {
+    background: #f2d800;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #00b0ff;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #f2d800);
+    border-radius: 6px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, greenyellow);
+
+}
+
+/* ===== Media Start ===== */
+@media(max-width: 1199px) {
+    header .header-menu .header_title h2 {
+        font-size: 42px
+    }
+
+    header .header-menu .header_title p {
+        font-size: 26px
+    }
+
+    main .hd-vd .white_box .whit_title {
+        padding: 0 30px 0 45px
+    }
+
+    .team .title h1 {
+        font-size: 130px
+    }
+
+    .Serfing .S_box .S_title {
+        padding: 20px 17px 20px 27px
+    }
+
+    .instagram .fac_box .fac_img {
+        bottom: 17%;
+    }
+
+    .instagram .fac_box .fac_img img {
+        width: 100%;
+    }
+
+    footer .footer_title2 {
+        margin-left: 30px;
+    }
+
+    .instagram h1 {
+        font-size: 86px;
+    }
+}
+
+@media(max-width:991px) {
+    header .header-menu {
+        text-align: center;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light {
+        margin: auto;
+        text-align: left;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .hd-vd .white_box .whit_title h3 {
+        font-size: 20px;
+    }
+
+    main .hd-vd .white_box {
+        left: -6%;
+        padding: 30px;
+    }
+
+    main .hd-vd .vd_box {
+        left: 0;
+        top: 50%;
+    }
+
+    .team .scale {
+        transform: scale(00.99) translateY(-3px) !important;
+    }
+
+    .team .box {
+        margin-bottom: 12px;
+    }
+
+    .Serfing .title h3 {
+        font-size: 20px;
+    }
+
+
+    .team .title h1 {
+        font-size: 80px;
+    }
+
+    .team .scale {
+        transform: scale(1) translateY(0px);
+        z-index: 0;
+    }
+
+    .instagram .fac_box {
+        margin-top: 60px;
+    }
+
+    .instagram .fac_box .fac_img {
+        bottom: 6%;
+    }
+
+    .instagram .fac_box .fac_img img {
+        width: 55%;
+    }
+
+    footer .flex {
+        flex-direction: column-reverse;
+    }
+
+    footer .fm {
+        margin: auto;
+    }
+
+    footer .footer_title {
+        justify-content: center;
+    }
+
+    .instagram .bottom {
+        text-align: center;
+    }
+
+    header .header_slider .slider_imges {
+        left: 40px;
+    }
+
+    .header_slider .view {
+        margin-right: 30px;
+    }
+
+    .slider_title .title_menu .nav {
+        width: 100%;
+    }
+
+    .slider_title .menutitle {
+        padding: 0 12px;
+    }
+
+    .instagram h1 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .header_icons {
+        margin-top: 20px;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .hd-vd .vd_box {
+        left: 0;
+        top: 50%;
+    }
+
+    .team .box {
+        margin-bottom: 12px;
+    }
+
+    .instagram .topp {
+        transform: translateY(0);
+    }
+
+    .instagram .bottom {
+        text-align: center;
+    }
+
+    header .header_slider .slider_imges {
+        left: 80px;
+    }
+
+    header .header_slider .slider_title h3 {
+        font-size: 23px;
+    }
+
+    .title_menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider_title .title_menu .nav {
+        width: 106%;
+    }
+
+    .slider_title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .instagram h1 {
+        font-size: 85px;
+    }
+
+}
+
+@media(max-width: 575px) {
+    header .header-menu .header_title h2 {
+        font-size: 38px;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .header-menu .header_title {
+        padding: 80px 0;
+    }
+
+    main .hd-vd .white_box {
+        background: white;
+        padding: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    main .hd-vd .white_box .whit_title {
+        padding: 0;
+    }
+
+    .team {
+        padding: 30px 0;
+    }
+
+    .team .box {
+        margin-bottom: 12px;
+    }
+
+    .team .scale {
+        transform: scale(1) !important;
+    }
+
+    .Serfing .title h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .instagram .bottom {
+        text-align: center;
+    }
+
+    .instagram h1 {
+        font-size: 47px;
+        transform: translateY(21px);
+    }
+
+    footer .footer_form .btn {
+        justify-content: center;
+
+    }
+}

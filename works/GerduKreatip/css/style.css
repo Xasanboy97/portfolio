@@ -1,0 +1,891 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+
+}
+
+header {
+    background: url(../images/GerduKreatip-BG_02.jpg) no-repeat center;
+    background-size: cover;
+    padding: 180px 0;
+}
+
+header .header_title h1 {
+    font-size: 55px;
+    color: white;
+    font-weight: 800;
+    word-spacing: -21px;
+}
+
+header .header_title span {
+    color: #1edab5;
+
+}
+
+header .header_title p {
+    margin-bottom: 0;
+    font-weight: 30px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 6px;
+}
+
+header .box .box_immg img {
+    max-width: 100%;
+    height: auto;
+}
+
+header .box_bg {
+    /*   background: #1abc9c; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header .box_bg .box_icon {
+    font-size: 70px;
+    color: white;
+}
+
+header .box_bg .box_text a {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+main .About .text {
+    padding: 100px 0 40px;
+}
+
+main .About .text h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #1abc9c;
+    text-transform: uppercase;
+}
+
+main .About_box .About_img img {
+    width: 100%;
+    height: auto;
+}
+
+main .About_box .About_title p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #333333;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin-top: 40px;
+}
+
+.About .Ourskills h4 {
+    font-size: 36px;
+    color: #333333;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.About .Ourskills .progres {
+    margin: 40px 0 auto 0;
+
+}
+
+.About .Ourskills .progres ul li {
+    position: relative;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+
+.About .Ourskills .progres ul li::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: rgb(238, 238, 238);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.About .Ourskills .progres ul li::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: rgb(26, 188, 156);
+    border-radius: 25px 25px 25px 25px;
+    animation-duration: 2s;
+    animation-timing-function: steps(60);
+    animation-fill-mode: forwards;
+}
+
+.About .Ourskills .progres button {
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+    border-radius: 25px 25px 25px;
+    margin-top: 50px;
+    background: transparent;
+    outline: none;
+}
+
+.About .Ourskills .progres button:hover {
+    color: black;
+}
+
+li.html::after {
+    animation-name: html;
+
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+li.css::after {
+    animation-name: css;
+
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+li.js::after {
+    animation-name: js;
+
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+li.ph::after {
+    animation-name: ph;
+
+}
+
+@keyframes ph {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+li.illu::after {
+    animation-name: illu;
+
+}
+
+@keyframes illu {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+/* ====== TEAM Start ===== */
+main .Team {
+    background: url(../images/Team-BG_02.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main .Team .Top_title {
+    padding: 90px 0;
+}
+
+main .Team .Top_title h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+main .Team .Top_title p {
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+}
+
+main .Team .item .item_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+main .Team .item:hover .item_title {
+    transform: scale(1.1);
+
+}
+
+main .Team .item .item_title {
+    padding: 30px 0;
+}
+
+main .Team .item .item_title h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+}
+
+main .Team .item .item_title p {
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+/* ====== TEAM End ===== */
+
+/* ====== Facts Start ====== */
+.Facts {
+    background: #1abc9c;
+}
+
+.Facts .Facts_title {
+    padding-top: 50px;
+}
+
+.Facts .Facts_title h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.Facts .Facts_title P {
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+}
+
+.Facts .facts_box {
+    margin: 40px 0;
+}
+
+.Facts .facts_box p:nth-of-type(1) {
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0;
+}
+
+.Facts .facts_box p:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+/* ====== Facts End ====== */
+
+/* ====== Services Start ====== */
+.Services {
+    background: #eeeeee;
+}
+
+.Services .Services_top h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #1abc9c;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.Services .Services_title h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.Services .Services_box {
+    display: flex;
+    padding-top: 60px;
+}
+
+.Services .Services_box .box_icon {
+    background: #1abc9c;
+    border: 2px solid #1abc9c;
+    color: white;
+    width: 80px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.Services .Services_box .box_text P:nth-of-type(1) {
+    color: #1abc9c;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.Services .Services_box .box_text P:nth-of-type(2) {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* ======= portfolio Satrt ====== */
+.portfolio h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #1abc9c;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.portfolio p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.portfolio .box .box_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio .box {
+    position: relative;
+}
+
+.portfolio .box .box_img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio .box:hover .box_hover {
+    left: 0;
+    opacity: 1;
+}
+
+.portfolio .box .box_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1abc9c83;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -48%;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.portfolio .box .box_hover p {
+    color: white;
+    font-size: 35px;
+}
+
+.portfolio button {
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+    border-radius: 25px 25px 25px;
+    margin-top: 50px;
+    background: transparent;
+    outline: none;
+    margin-bottom: 40px;
+}
+
+.portfolio button:hover {
+    color: black;
+}
+
+/* ======= Slider Start ====== */
+.Slider {
+    background: url(../images/Slider-Bg_02.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Slider .carousel .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.Slider .carousel .box .box_img img {
+    width: 100%;
+    height: auto;
+}
+
+.Slider .carousel .box .box_text p {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.Slider .carousel .slider_title h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.Slider .carousel .slider_title p {
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    margin-top: 50px;
+}
+
+.Slider .carousel .item .item_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Slider .carousel .item {
+    margin: 50px 0;
+}
+
+.Slider .carousel .item .item_title h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.Slider .carousel .item .item_title p {
+    font-size: 17px;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* ====== Slider Ichiga olg'a ====== */
+.Slider .carousel .carousel-control-prev {
+    font-size: 40px;
+    top: 45%;
+}
+
+.Slider .carousel .carousel-control-next {
+    font-size: 40px;
+    top: 45%;
+}
+
+/* ====== Address Start ===== */
+.Address .Address_form .Address_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #34495e;
+    bottom: 250px;
+    right: 20%;
+    padding: 70px 0;
+}
+
+.Address .Address_form .Address_title a:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.Address .Address_form .Address_title a:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1abc9c;
+    margin-bottom: 20px;
+
+}
+
+.Address .Address_form .Address_title h4 {
+    color: white;
+    font-weight: 600;
+}
+
+.Address .Address_form .Address_title P {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0;
+}
+
+.Address .Address_form .Address_title .icon {
+    margin-top: 50px;
+    font-size: 25px;
+    color: #34495e;
+}
+
+.Address .Address_form .Address_title .icon .fab {
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.Address .Address_form .Address_title .icon .fab:hover {
+    color: #1abc9c;
+}
+
+/* ======= Contact Start ======== */
+.Contact h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #1abc9c;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.Contact p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.Contact form {
+    width: 100%;
+}
+
+.Contact form input {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.Contact form input.text,
+.phone,
+.email {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    border: 0;
+    background: #eeeeee;
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    font-style: italic;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+.Contact button {
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+    border-radius: 25px 25px 25px;
+    margin-top: 50px;
+    background: transparent;
+    outline: none;
+    margin-bottom: 40px;
+}
+
+.Contact button:hover {
+    color: black;
+}
+
+.Contact form input.text,
+.phone,
+.email:focus {
+    color: #1abc9c;
+}
+
+.Contact .form-items {
+    position: relative;
+    width: 100%;
+}
+
+.Contact .form-items .input.message {
+    width: 100%;
+    padding: 25px 10px;
+    height: 180px;
+    background: #eeeeee;
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    border: 0;
+    border-radius: 25px 25px 25px;
+    resize: none;
+    outline: none;
+}
+
+.Contact form input.message:focus {
+    color: #1abc9c;
+}
+
+/* ===== Footer Start ===== */
+footer {
+    background: #eeeeee;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #aaaaaa;
+    margin-bottom: 0;
+}
+
+footer .footer_top p span {
+    color: #1abc9c;
+}
+
+footer .footer_top a {
+    color: #1abc9c;
+    margin: 2px 3px;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    cursor: pointer;
+    z-index: 10;
+    animation: UpDown 2s linear infinite;
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+#top img {
+    padding: 15px;
+    border-radius: 49% 51% 49% 51% / 97% 0% 100% 3%;
+    width: 60px;
+    height: 60px;
+    background: #1abc9c;
+}
+
+#top img:hover {
+    background: rgb(153, 231, 36);
+}
+
+/* ====== MEDIA STARTING ====== */
+@media(max-width: 1199px) {
+    footer .footer_top {
+        display: flex;
+    }
+
+    header .box_bg {
+        padding: 0px;
+    }
+
+    header .box_bg .box_text a {
+        font-size: 25px;
+    }
+
+    header .bot {
+        margin-top: 28px;
+    }
+}
+
+@media(max-width: 991px) {
+    main .About .text h2 {
+        font-size: 36px;
+    }
+
+    .About .Ourskills h4 {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    main .Team .Top_title h2 {
+        font-size: 36px;
+    }
+
+    .Facts .Facts_title h2 {
+        font-size: 36px;
+    }
+
+    .Services .Services_top h2 {
+        font-size: 36px;
+    }
+
+    .portfolio h2 {
+        font-size: 36px;
+    }
+
+    .Slider .carousel .slider_title h2 {
+        font-size: 36px;
+    }
+
+    .Contact h2 {
+        font-size: 36px;
+    }
+
+    .Address .Address_form .Address_title {
+        right: 0;
+        width: 60%;
+    }
+
+    footer .footer_top {
+        display: flex;
+    }
+
+    .Slider .carousel .carousel-control-prev {
+        top: 35%;
+    }
+
+    .Slider .carousel .carousel-control-next {
+        top: 35%;
+    }
+
+    .Ourskills .progres .btn {
+        margin-bottom: 28px;
+    }
+
+    .botom {
+        margin-bottom: 1.2rem;
+    }
+
+}
+
+@media(max-width: 757px) {
+    .Slider .carousel .carousel-control-prev {
+        top: 40%;
+    }
+
+    .Slider .carousel .carousel-control-next {
+        top: 40%;
+    }
+
+}
+
+@media(max-width: 575px) {
+    header {
+        padding: 100px 0 0;
+    }
+
+    main .About .text h2 {
+        font-size: 37px;
+    }
+
+    .Ourskills .progres .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .Facts .Facts_title P {
+        font-size: 18px;
+    }
+
+    .Facts .facts_box p:nth-of-type(2) {
+        font-size: 19px;
+    }
+
+    .Services .Services_box .box_icon {
+        margin-bottom: 15px;
+    }
+
+    .Services .Services_box .box_text P:nth-of-type(1) {
+        font-size: 26px;
+    }
+
+    .portfolio h2 {
+        font-size: 37px;
+    }
+
+    .portfolio p {
+        margin-bottom: 0;
+        margin: 20px 0;
+    }
+
+    .Contact h2 {
+        font-size: 37px;
+    }
+
+    .Services .Services_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Address .Address_form .Address_title {
+        right: 15px;
+        width: 90%;
+    }
+
+    footer .footer_top {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Slider .carousel .carousel-control-prev {
+        top: 50%;
+    }
+
+    .Slider .carousel .carousel-control-next {
+        top: 50%;
+    }
+}
