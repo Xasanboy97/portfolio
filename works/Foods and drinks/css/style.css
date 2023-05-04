@@ -1,0 +1,1520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    background: #1d2c3f;
+
+}
+
+.roww {
+    padding: 25px 0;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+}
+
+.wrapper nav {
+    width: 100%;
+
+}
+
+.menu-top {
+    padding: 0;
+    margin: 0;
+    background: #e9342c;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+
+}
+
+.menu-top li a {
+    display: block;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid #dd352e;
+    text-decoration: none;
+
+}
+
+.menu-top li:hover>a {
+    color: gold;
+}
+
+.menu-top li ul,
+.menu-top li ul li ul {
+    position: absolute;
+    background: #e9342c;
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+    text-align: center;
+    z-index: 999;
+    left: 0px;
+    top: 0;
+    height: auto;
+    min-width: 100%;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0;
+}
+
+.menu-top li:hover>ul,
+.menu-top li ul li:hover>ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    left: 44px;
+}
+
+.menu-top li ul li:hover>ul {
+    left: 20px;
+}
+
+.menu-top li ul li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 7px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.25);
+    height: auto;
+}
+
+/*  */
+.menu-top a img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+
+.menu-top li {
+    position: relative;
+    width: 100%;
+
+}
+
+.side {
+    width: 55%;
+    margin: 0 auto;
+    /*  padding: 35px 0;  */
+}
+
+.menu a {
+    background: #e9342c;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #dd352e;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.menu a:hover {
+    background: #666;
+    padding: 10px 0 10px 10px;
+}
+
+/*   Chap menu */
+.menu__list {
+    position: relative;
+
+}
+
+.menu li:first-child a,
+.menu li .menu__drop li:first-child a {
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a,
+.menu li .menu__drop li:last-child a {
+    border-radius: 0 0 3px 3px;
+    border-bottom: 0;
+
+}
+
+menu li .menu__drop li a {
+    border-radius: 0;
+    z-index: 10;
+
+}
+
+.menu__drop {
+    position: absolute;
+    width: 200%;
+    left: 102%;
+    top: -9999px;
+    opacity: 0;
+    transition: 500ms;
+    text-align: center;
+    border: 0;
+    z-index: 10;
+    filter: drop-shadow(0px 0px 10px #e9342c);
+}
+
+.menu__drop li a {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.menu__list:hover .menu__drop {
+    opacity: 1;
+    top: 0;
+
+}
+
+/* === Banner === */
+.banner {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+/*== Tomato == */
+.tomato {
+    position: absolute;
+    top: 9%;
+    left: 7%;
+}
+
+.tomato h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4e4f53;
+    margin-bottom: 10px;
+    z-index: 2;
+
+}
+
+.tomato h5 {
+    color: #8bc058;
+    font-size: 12px;
+    margin: 10px 0 0 0;
+}
+
+.tomato .stars p {
+    color: #d8d9db;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.tomato .stars .far {
+    color: #f8db9c;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+.tomato .stars .far:hover {
+    color: #d8d9db;
+}
+
+.tomato .stars .far:nth-last-child(2) {
+    color: #d8d9db;
+}
+
+.tomato ul {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.tomato ul li {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.tomato h4 {
+    color: #7f8187;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px 0 0 0;
+    display: inline-block;
+}
+
+.tomato ul li p {
+    display: block;
+    font-weight: 400;
+    color: #d8dadd;
+    font-size: 13px;
+
+}
+
+.btn button {
+    padding: 6px 15px;
+    color: white;
+    font-size: 12px;
+    background: #8bc058;
+    border: 0;
+    border-radius: 6px 6px 6px 6px;
+    outline: none;
+    transition: 500ms;
+}
+
+.tomato .btn button:hover {
+    background: #e9342c;
+    box-shadow: 10px 10px 36px 5px rgba(0, 0, 0, 0.75);
+}
+
+.tomato .btn {
+    padding: 0;
+    border: 0;
+}
+
+/* == Ingredients == */
+.Ingredients {
+    background: url(../image/banner-inder_032x.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 15px 0;
+    margin: 0 10px;
+    margin-bottom: 20px;
+
+}
+
+.Ingredients .thme h2 {
+    color: #1d2c3f;
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.Ingredients .carosel ul li {
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1d2c3f;
+    font-weight: 400;
+    z-index: 10;
+}
+
+.Ingredients .carosel ul li:hover {
+    text-decoration: underline;
+}
+
+/* === friday ===*/
+.friday {
+    position: relative;
+    width: 100%;
+
+}
+
+.friday img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.fri_text {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+
+}
+
+.fri_text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+/* === Fre_sec === */
+.fre_sec {
+    display: block;
+    margin-top: 12%;
+}
+
+.fre_sec .radio {
+    font-size: 15px;
+    width: 70%;
+    font-weight: 400;
+    margin-top: 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding-left: 27px;
+    margin-bottom: 22px;
+    text-transform: none;
+}
+
+.fre_sec .radio input {
+    position: absolute;
+    left: -9999px;
+}
+
+.radio,
+.checkbox {
+    position: relative;
+    display: block;
+}
+
+.fre_sec .radio i {
+    border-color: #8bc058;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    transition: 500ms;
+}
+
+.fre_sec .radio input+i:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
+    background-color: #8bc058;
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.1s;
+}
+
+.fre_sec .radio input:checked+i:after {
+    opacity: 1;
+}
+
+.fre_sec .radio i:hover {
+    border-color: #dd352e;
+}
+
+.btn {
+    padding: 0;
+}
+
+.fri_text .btn button {
+    background: #e9342c;
+    transition: 500ms;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 6px 18px;
+    border: 0;
+}
+
+.fri_text .btn button:hover {
+    background: #478cba;
+    color: white;
+    box-shadow: 10px 10px 36px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* === capucino === */
+.capucino {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.capucino img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.capucino .cap_title {
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    text-align: center;
+}
+
+.capucino .cap_title span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #c2c2c4;
+}
+
+.capucino .cap_title h3 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #4e4f53;
+    margin: 5px 0;
+    z-index: 2;
+}
+
+.capucino .cap_title p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #7f8187;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.liner {
+    width: 15%;
+    height: 2px;
+    background: #1d2c3f;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.capucino .btn {
+    position: absolute;
+    bottom: -200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.capucino .btn button {
+    background: #478cba;
+    font-weight: 700;
+}
+
+.capucino .btn button:hover {
+    box-shadow: 10px 10px 36px 5px rgba(0, 0, 0, 0.75);
+    background: #8bc058;
+}
+
+/* === burger === */
+.burger {
+    position: relative;
+
+}
+
+.burger img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px 6px 0 0;
+}
+
+.burger .burger_title {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+
+.burger .burger_title h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.burger .burger_title p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #c6ddee;
+    margin: 2px 0 5px 0;
+}
+
+.burger .burger_title span {
+    color: #bcec8f;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.burger .burger_star {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 11%;
+    background: #ecc30a;
+    padding: 3px 10px;
+    right: 0%;
+}
+
+.burger .burger_star .far {
+    color: white;
+    font-size: 17px;
+}
+
+.burger .burger_star p {
+    font-weight: 400;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.burger .burger_top {
+    padding: 13px 10px;
+    background: #fff;
+}
+
+.burger .top_b img {
+    max-width: 9%;
+    width: 100%;
+}
+
+.burger .top_b {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.burger .top_b p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7f8187;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.burger .top_b .far {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* === calendar_left === */
+
+.calendar_left {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.calendar_left img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.calendar_left .calendar_title {
+    position: absolute;
+    top: 8%;
+    width: 30%;
+    left: 8%;
+    text-align: center;
+}
+
+.calendar_title .year h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+    margin-left: -10px;
+}
+
+.calendar_left .calendar_title .year .line1 {
+    width: 20%;
+    height: 3px;
+    background: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar_left .calendar_title .year .line2 {
+    position: absolute;
+    width: 14%;
+    height: 1px;
+    background: white;
+    right: 1%;
+    margin-top: 9px;
+}
+
+.calendar_left .calendar_title .year .line3 {
+    position: absolute;
+    width: 15%;
+    height: 1px;
+    background: white;
+    right: 1%;
+    margin-top: 17px;
+}
+
+.calendar_left .calendar_title h4 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin: 45px 0;
+    margin-bottom: 0;
+}
+
+.calendar_left .calendar_title .btn button {
+    margin-top: 60px;
+    padding: 5px 10px;
+}
+
+.calendar_left .calendar_title .btn button:hover {
+    background: #1d2c3f;
+}
+
+/* === shop_itme === */
+.shop_itme {
+    width: 100%;
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 26px 20px;
+    margin-left: 24px;
+    margin-top: 25px;
+
+}
+
+.shop_item_title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4e4f53;
+}
+
+ul.ull {
+    padding: 10px 10px;
+    border-bottom: 1px solid #a7a7a7;
+    margin: 0;
+}
+
+ul.ull li {
+    display: inline-block;
+    width: 25%;
+    color: #a7a7a7;
+    font-size: 12px;
+}
+
+
+.btn-danger {
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.shop-item-pics img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul.shop-item-card li {
+    width: 25%;
+    display: inline-block;
+    display: flex;
+}
+
+ul.shop-item-card2 li {
+    width: 25%;
+    display: inline-block;
+    display: flex;
+}
+
+ul.shop-item-card3 li {
+    width: 25%;
+    display: inline-block;
+    display: flex;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #4e4f53;
+    font-weight: 400;
+}
+
+.name span {
+    color: #7f8187;
+    font-size: 12px;
+}
+
+
+/* ==== CART START ==== */
+.cart-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c2c2c4;
+    margin-bottom: 15px;
+}
+
+.column {
+    margin-right: 4px;
+}
+
+.quanity {
+    margin-right: 6px;
+}
+
+.cart-item.cart-column {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 45%;
+    margin: 0;
+
+}
+
+span.cart-item-title {
+    font-size: 14px;
+    color: #4e4f53;
+    font-weight: 400;
+}
+
+span.cart-item-title2 {
+    color: #7f8187;
+    font-size: 12px;
+}
+
+.cart-quantity.cart-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input.cart-quantity-input {
+    width: 25%;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+span.cart-price.cart-column {
+    font-size: 14px;
+    font-weight: 700;
+    color: #478cba;
+
+}
+
+.cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+span.cart-price.cart-column {
+    margin: 0 8px;
+}
+
+
+/* === shop_itme Btn === */
+
+.add {
+    padding: 5px 10px;
+    margin-top: 15px;
+
+}
+
+.btn-success {
+    font-size: 14px;
+    padding: 1px 8px;
+}
+
+.quantity-select .entry {
+    height: 22px;
+    line-height: 24px;
+    width: 22px;
+    margin-right: 3px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background: #a7a7a7;
+    border-radius: 5px;
+
+}
+
+.quantity-select .entry::before {
+    content: "";
+    width: 11px;
+    height: 1px;
+    background: #fff;
+    left: 50%;
+    margin-left: -5.5px;
+    top: 50%;
+    margin-top: -0.5px;
+    position: absolute;
+}
+
+.quantity-select .entry.value {
+    cursor: default;
+    width: 44px;
+    padding: 0 0px;
+    min-width: 20px;
+    background: none;
+    color: #4e4f53;
+}
+
+.quantity-select .entry.value-plus:after {
+    content: "";
+    height: 11px;
+    width: 1px;
+    background: #fff;
+    left: 50%;
+    margin-left: -0.5px;
+    top: 50%;
+    margin-top: -5.5px;
+    position: absolute;
+}
+
+.quantity-select .entry.value {
+    cursor: default;
+    padding: 0 0px;
+    width: auto;
+    min-width: 20px;
+    background: none;
+    color: #4e4f53;
+}
+
+/* === cake === */
+.bottom {
+    position: relative;
+    left: 54%;
+    bottom: 107%;
+
+}
+
+.cake img {
+    width: 100%;
+    height: 333px;
+    border-radius: 5px;
+}
+
+.cake_title {
+    position: absolute;
+    top: 28%;
+    left: 60%;
+}
+
+.cake_title p {
+    color: #abb6bf;
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.cake_title h3 {
+    color: #484a51;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.cake_title .stars p {
+    color: #9aa8b3;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.cake_title .stars .far {
+    color: #ed7b5a;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+.cake_title .stars .far:hover {
+    color: hotpink;
+}
+
+.cake_title .stars .far:nth-last-child(2) {
+    color: #c3c7cf;
+}
+
+.cake_title .btn {
+    margin-top: 25px;
+
+}
+
+.cake_title .btn button {
+    padding: 6px 25px;
+}
+
+.cake_title .btn button:hover {
+    background: #d43d13;
+    box-shadow: 10px 10px 36px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* ==== <Media Start> ==== */
+@media(max-width:1140px) {
+    .calle {
+        margin-top: 24px;
+    }
+
+
+}
+
+@media(max-width: 1199px) {
+    .roww {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        right: 22px;
+    }
+
+    .side {
+        width: 50%;
+    }
+
+    .tomato h3 {
+        font-size: 17px;
+    }
+
+    .tomato .stars .far {
+        font-size: 17px;
+
+    }
+
+    .tomato .stars p {
+        font-size: 16px;
+
+    }
+
+    .tomato h5 {
+        margin: 9px 0 0 0;
+    }
+
+    .tomato ul li p {
+        font-size: 15px;
+    }
+
+    .btn button {
+        padding: 5px 15px;
+        font-size: 14px;
+
+    }
+    .capucino .btn{
+        bottom: -260%;
+    }
+    .btn {
+        margin-top: -10px;
+
+    }
+
+    .Ingredients {
+        padding: 28px 0;
+        height: auto;
+        margin-top: 17px;
+        margin: 0 -12px;
+    }
+
+    .Ingredients .carosel ul li {
+        font-size: 14px;
+    }
+
+    .friday {
+        margin-top: 17px;
+    }
+
+    .fri_text {
+        top: 10%;
+    }
+
+    .fri_text h3 {
+        font-size: 22px;
+    }
+
+    .fre_sec {
+        margin-top: 6%;
+    }
+
+    .fre_sec .radio {
+        font-size: 13px;
+    }
+
+    .friday .btn {
+        margin-top: 0;
+    }
+
+    .friday .btn button {
+        padding: 4px 12px;
+    }
+
+    .capucino .cap_title p {
+        margin-top: 11px;
+        font-size: 12px;
+    }
+
+    .burger {
+        margin-top: -82%;
+    }
+
+    .calle {
+        display: -webkit-inline-box;
+        align-items: center;
+        flex-direction: row;
+        left: -37%;
+        margin-top: 15px;
+    }
+
+    .shop_itme {
+        margin-top: 0;
+    }
+
+    .calendar_left {
+        margin-left: 18px;
+    }
+
+    .calendar_left {
+        margin-left: 0;
+    }
+
+    .shop_itme {
+        width: 80%;
+        margin-left: 12px;
+    }
+
+    .cart-row {
+        margin-bottom: 29px;
+    }
+
+    .add .btn {
+        margin-top: 0;
+    }
+
+    .cart-quantity .btn {
+        margin-top: 0;
+    }
+
+    .bottom {
+        width: 91%;
+        left: 63px;
+        margin-top: 15px;
+    }
+
+    .calendar_left {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:991px) {
+    .Ingredients {
+        height: 228px;
+    }
+
+    .tomato .btn {
+        margin-top: -20px;
+    }
+
+    .bottom {
+        left: 30px;
+    }
+
+    .burger {
+        margin-top: -47%;
+    }
+
+    .fri_text {
+        top: 1%;
+    }
+
+    .calle {
+        display: block;
+        left: 0;
+    }
+
+    .shop_itme {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .shop_item_title h3 {
+        font-size: 27px;
+    }
+
+    ul.ull li {
+        font-size: 15px;
+    }
+
+    span.cart-item-title {
+        font-size: 15px;
+    }
+
+    span.cart-price.cart-column {
+        font-size: 17px;
+        margin: 0 60px;
+    }
+
+    .calendar_left {
+        margin-bottom: 15px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .quanity {
+        margin-right: 0;
+    }
+
+    .cart-quantity .btn {
+        font-size: 19px;
+    }
+
+    .cake_title h3 {
+        font-size: 22px;
+    }
+
+    .calendar_left .calendar_title .btn button {
+        margin-top: 200%;
+    }
+
+    .calendar_left .calendar_title h4 {
+        font-size: 25px;
+    }
+
+    .calendar_left .calendar_title h4 {
+        margin: 60px 0;
+        font-size: 20px;
+    }
+
+    .btn-success {
+        font-size: 17px;
+    }
+
+    .capucino .btn{
+        bottom: -190%;
+    }
+
+    .capucino .cap_title p {
+        font-size: 11px;
+    }
+
+    .calendar_left {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    .side {
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.menu {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__list {
+        width: 25%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__drop {
+        width: 100%;
+        left: 0;
+        margin-top: 53px;
+    }
+
+    .banner {
+        right: 0;
+        margin-bottom: 15px;
+    }
+
+    .tomato h3 {
+        font-size: 21px;
+    }
+
+    .tomato .stars .far {
+        font-size: 19px;
+    }
+
+    .tomato .stars p {
+        font-size: 18px;
+    }
+
+    .tomato h5 {
+        font-size: 15px;
+    }
+
+    .tomato h4 {
+        font-size: 17px;
+    }
+
+    .btn button {
+        font-size: 16px;
+    }
+
+    .Ingredients {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .Ingredients .thme h2 {
+        font-size: 21px;
+    }
+
+    .Ingredients .carosel ul li {
+        font-size: 15px;
+        margin-bottom: 4px;
+
+    }
+
+    .frre {
+        margin-left: 0;
+        margin-right: 14px;
+    }
+
+    .fri_text {
+        top: 10%;
+    }
+
+    .fri_text h3 {
+        font-size: 26px;
+    }
+
+    .fre_sec .radio {
+        font-size: 16px;
+    }
+
+    .fre_sec {
+        margin-top: 11%;
+    }
+
+    .friday .btn {
+        margin-top: 30px;
+    }
+
+    .friday .btn button {
+        font-size: 16px;
+    }
+
+    .capucino {
+        margin-bottom: 15px;
+    }
+
+    .capucino .cap_title span {
+        font-size: 14px;
+    }
+
+    .capucino .cap_title h3 {
+        font-size: 27px;
+    }
+
+    .capucino .btn{
+        bottom: -280%;
+    }
+
+    .burger .burger_title h3 {
+        font-size: 22px;
+    }
+
+    .liner {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .capucino .cap_title p {
+        font-size: 14px;
+    }
+
+    .burger {
+        margin-top: 0;
+
+    }
+
+    .burger img {
+        width: 100%;
+    }
+
+    .burger .top_b p {
+        font-size: 15px;
+    }
+
+    .burger .top_b .far {
+        font-size: 22px;
+        margin-right: 7px;
+    }
+
+    .calendar_left {
+        margin-bottom: 15px;
+    }
+
+    .calendar_left .calendar_title .btn button {
+        margin-top: 0;
+    }
+
+    .bottom {
+        width: 100%;
+        left: 0;
+        margin-bottom: 15px;
+    }
+
+    .calendar_left {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 575px) {
+    .menu__drop li a {
+        font-size: 10px;
+    }
+
+    .banner {
+        right: 0;
+    }
+
+    .tomato {
+        top: 5%;
+    }
+
+    .tomato h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .tomato .stars .far {
+        font-size: 14px;
+    }
+
+    .tomato ul {
+        margin-top: 5px;
+    }
+
+    .tomato .stars p {
+        font-size: 13px;
+    }
+
+    .tomato h5 {
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .tomato h4 {
+        font-size: 14px;
+    }
+
+    .tomato ul li p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .btn button {
+        padding: 3px 12px;
+    }
+
+    .frre {
+        margin-left: 0;
+    }
+
+    .fre_sec {
+        top: 0;
+        margin-top: 0;
+    }
+
+    .fre_sec .radio {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .friday .btn {
+        margin-top: 10px;
+    }
+
+    .friday .btn button {
+        font-size: 13px;
+    }
+
+    .fri_text {
+        top: 7%;
+    }
+
+    .fri_text h3 {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .capucino .cap_title p {
+        font-size: 11px;
+    }
+
+    .capucino .cap_title {
+        top: 4%;
+    }
+
+    .capucino .btn{
+        bottom: -150%;
+    }
+
+    .burger .burger_title {
+        top: 2%;
+    }
+
+    .burger .top_b p {
+        font-size: 13px;
+    }
+
+    .calendar_left .calendar_title h4 {
+        margin: 40px 0;
+        font-size: 14px;
+    }
+
+    .btn button {
+        font-size: 12px;
+    }
+
+    span.cart-price.cart-column {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    span.cart-item-title {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .cart-quantity .btn {
+        font-size: 14px;
+    }
+
+    .quantity-select .entry {
+        width: 17px;
+        height: 17px;
+    }
+
+    .column {
+        margin-right: 0;
+        width: 40%;
+    }
+
+    .shop_itme {
+        padding: 25px 6px;
+        text-align: center;
+    }
+
+    .cake_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        left: 0;
+
+    }
+
+}
