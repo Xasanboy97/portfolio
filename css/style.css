@@ -17,11 +17,12 @@
     --icon-color: black;
     --Day-background: #fdf8ef;
     --Day-background_2: #fdf0d5;
-    --Night_background: #181717;
+    /* --Night_background: #181717; */
     --FooterP-color: #061727;
     --background: var(--clr-light);
     --Fixed-background: #181718;
     --github-color: #24292f;
+     --Night_background: url('/image/gradient-wave-background.jpg') center center / cover;
 }
 
 .darkmode {
