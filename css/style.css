@@ -22,12 +22,12 @@
     --background: var(--clr-light);
     --Fixed-background: #181718;
     --github-color: #24292f;
-     --Night_background: url('/image/gradient-wave-background.jpg') center center / cover;
+     --Night_bg: url('/image/gradient-wave-background.jpg') center center / cover;
 }
 
 .darkmode {
-    --Day-background: var(--Night_background);
-    --Day-background_2: var(--Night_background);
+    --Day-background: var(--Night_bg);
+    --Day-background_2: var(--Night_bg);
     --ASpan-color: var(--ASpan2-color);
     --Sertext-color: white;
     --AboutP-color: white;
