@@ -22,7 +22,7 @@
     --background: var(--clr-light);
     --Fixed-background: #181718;
     --github-color: #24292f;
-     --Night_bg: url('/image/wave_background') center center / cover;
+     --Night_bg: url('/image/wave_background.jpg') center center / cover;
 }
 
 .darkmode {
